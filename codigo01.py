@@ -13,5 +13,4 @@ st.latex(r''' a+a r^1+a r^2+a r^3 ''')
 
 
 x = st.slider('Selecione seu grau de satisfação',0,100)
-st.write('O grau de satisfação escolhido foi: ')
-st.write(x)
+st.write('O grau de satisfação escolhido foi: ', x)
