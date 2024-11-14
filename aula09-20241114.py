@@ -14,3 +14,6 @@ opcao = st.selectbox(
     options=["Selecione..."] + df['nomeServidor'].tolist()
 )
 
+dadosFiltrados = df[df['nomeServidor'] == opcao]
+
+st.write(dadosFiltrados)
