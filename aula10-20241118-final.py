@@ -26,3 +26,13 @@ opcao = st.selectbox(
      df_total['sexo'].unique())
 dfFiltrado = df_total[df_total['sexo'] == opcao]
 st.title('Deputados do sexo ' + opcao)
+
+#item 6
+#ocorrencias totais
+#procurando no chat GPT: Como calcular a quantidade de deputados por estado?
+#value_counts() conta os valores únicos
+ocorrencias = dfFiltrado['siglaUf'].value_counts()
+dfEstados = pd.DataFrame({
+    'siglaUf': ocorrencias.index,
+    'quantidade': ocorrencias.values}
+    )
