@@ -1,3 +1,7 @@
+import requests as rq
+import pandas as pd
+import streamlit as st
+
 #importando os dados das deputadas
 url_mulheres = 'https://dadosabertos.camara.leg.br/api/v2/deputados?siglaSexo=F&ordem=ASC&ordenarPor=nome'
 resposta_mulheres = rq.get(url_mulheres)
